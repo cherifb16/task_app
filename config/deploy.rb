@@ -7,8 +7,8 @@ lock "~> 3.10"    # 1
  set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}   # 5
  set :keep_releases, 5   # 6
  set :rbenv_ruby, '3.0.1'    # 7
- append :linked_files, 'config/secrets.yml' 
  set :log_level, :info   # 8
+ append :linked_files, 'config/secrets.yml' 
 
  after 'deploy:published', 'deploy:seed'   # 9
  after 'deploy:finished', 'deploy:restart'   # 10
