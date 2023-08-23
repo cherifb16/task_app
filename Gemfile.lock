@@ -255,7 +255,7 @@ DEPENDENCIES
   capistrano3-unicorn
   capybara (>= 2.15)
   jbuilder (~> 2.7)
-  listen
+  listen (~> 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
   rails (~> 6.0.3)

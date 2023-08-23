@@ -9,6 +9,7 @@ lock "~> 3.10"    # 1
  set :rbenv_ruby, '3.0.1'    # 7
  set :log_level, :info   # 8
  append :linked_files, 'config/secrets.yml' 
+ Rake::Task["deploy:assets:backup_manifest"].clear_actions
 
  after 'deploy:published', 'deploy:seed'   # 9
  after 'deploy:finished', 'deploy:restart'   # 10
