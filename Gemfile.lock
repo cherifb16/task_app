@@ -58,7 +58,7 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
-    airbrussh (1.4.1)
+    airbrussh (1.4.2)
       sshkit (>= 1.6.1, != 1.7.0)
     bindex (0.8.1)
     bootsnap (1.16.0)
@@ -132,8 +132,6 @@ GEM
     net-ssh (7.2.0)
     nio4r (2.5.9)
     nokogiri (1.15.4-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
     pg (1.5.3)
     public_suffix (5.0.3)
@@ -244,7 +242,6 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
-  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
@@ -255,7 +252,7 @@ DEPENDENCIES
   capistrano3-unicorn
   capybara (>= 2.15)
   jbuilder (~> 2.7)
-  listen (~> 3.2)
+  listen
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
   rails (~> 6.0.3)
@@ -274,4 +271,4 @@ RUBY VERSION
    ruby 3.0.1p64
 
 BUNDLED WITH
-   2.4.16
+   2.4.18
